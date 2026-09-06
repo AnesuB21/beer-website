@@ -98,7 +98,7 @@
     </nav>
 
     <h2> Give us your Review</h2>
-    <form>
+    <form id="reviewForm">
     <table> 
         <tr> 
             <td> Name: </td>
@@ -126,6 +126,18 @@
             </tr>
     </table>
     </form>
+
+    <p id="message"></p>
+    <script>
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        document.getElementById("message").textContent =
+            "Thank you! Your review has been submitted successfully. Hope to hear from you soon!";
+
+        this.reset();
+    });
+</script>
 
 </body>
 </html>
