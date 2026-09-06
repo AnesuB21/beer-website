@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+    <title> Review </title>
+
+    <style> 
+        body{
+            background-color: #DEB887;;
+            min-height: 75vh;
+            justify-content: center;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+            font-size: 20px;
+        }
+        h1{
+        color: #5C3A21;;
+        text-align: center;
+        margin-bottom:20px;
+        font-size: 60px;
+    }
+    h2{
+        color: #5C3A21;;
+        text-align: center;
+        margin-bottom:20px;
+        font-size: 40px;
+    }
+    button{
+        background-color: #a87532fe;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        color: black;
+        padding: 15px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        margin-top:30px;
+        margin-bottom: 60px;
+        cursor: pointer;
+        transition-duration: 0.2s;
+    }
+    button:hover{
+        background-color:#a87532fe ;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    }
+        .navi{
+            width:100%;
+        }
+        .navi ul{
+            list-style-type: none;
+            background-color:  #a87532fe;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            overflow: hidden;
+
+        }
+
+        .navi a{
+            color: white;
+            text-decoration: none;
+            padding: 30px;
+            display:block;
+            text-align: center;
+
+        }
+        .navi a:hover{
+            background-color: #987342 ;
+            text-align: center;
+            padding:30px;
+        }
+
+        .navi li{
+            flex: 1;
+        }
+    </style>
+</head>
+<body> 
+    <h1> BonteBokke </h1>
+
+    <nav class="navi">
+        <ul> 
+            <li> <a href="home.html"> Home </a></li>
+            <li> <a href="about.html"> About </a></li>
+            <li> <a href="review.html"> Review </a></li>
+            <li> <a href="contact.html"> Contact </a></li>
+
+            
+        </ul>
+    </nav>
+
+    <h2> Give us your Review</h2>
+    <table> 
+        <tr> 
+            <td> Name: </td>
+            <td> <input type="text" name="name" value= "" required> </td>
+        </tr>
+        <tr> 
+            <td> Surname: </td>
+            <td> <input type="text" name="surname" value= "" required> </td>
+        </tr>
+        <tr> 
+            <td> Contact Number: </td>
+            <td> <input type="text" name="number" value= "" required> </td>
+        </tr>
+        <tr> 
+            <td> Email Address: </td>
+            <td> <input type="text" name="email" value= "" required> </td>
+        </tr>
+        <tr> 
+            <td> Review: </td>
+            <td> <textarea name="review" cols="25" rows="6" value= "" required> </textarea> </td>
+        </tr>
+        <tr> 
+                 <td> <button type="submit" > Submit Review </button></td>
+                 <td> <button type="reset" > Clear Form  </button> </td>
+            </tr>
+    </table>
+
+</body>
+</html>
