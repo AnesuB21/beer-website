@@ -25,21 +25,23 @@
             width:100%;
         }
         .navi ul{
-            list-style-type: none;
             background-color:  #a87532fe;
             padding: 0px;
             margin: 0px;
             display: flex;
-            overflow: hidden;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width:100%;
 
         }
 
         .navi a{
             color: black;
             text-decoration: none;
-            padding: 30px;
+            padding: 20px;
             display:block;
             text-align: center;
+            font-size: clamp(12px, 1.5vw, 18px);
 
         }
         .navi a:hover{
@@ -49,7 +51,8 @@
         }
 
         .navi li{
-            flex: 1;
+            list-style-type: none;
+            white-space: nowrap; 
         }
         p{
         max-width: 1000px;
